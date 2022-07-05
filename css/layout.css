@@ -1,0 +1,156 @@
+:root {
+    --lightest-green: rgb(163, 219, 163);
+    --light-green: rgb(134, 194, 134);
+    --green: rgb(84, 123, 84);
+    --dark-green: rgb(72, 106, 72);
+    --size-h1: 30px;
+    --size-h2: 26px;
+    --size-h3: 23px;
+    --size-p: 20px;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin: auto;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100%;
+}
+
+#content-wrap{
+    padding-bottom: 90px; /*Footer padding*/
+}
+.header {
+    display: flex;
+    overflow: hidden;
+    padding: 20px 10px;
+    justify-content: space-between;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header-right {
+    float: right;
+}
+
+.header .search-container {
+    float: center;
+}
+
+.header input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.header input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.header .search-container button {
+    float: center;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.header .search-container button:hover {
+    background: #ccc;
+}
+
+.restaurant-info {
+    text-align: left;
+}
+
+.restaurant-menu{
+    /*text-align: -webkit-center;*/
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap:100px;
+    padding: 100px;
+}
+
+#product-img{
+    width:14.8vw;
+    height: 20vh;
+    min-width: 196px;
+    border-radius: 8px;
+}
+
+.login-form {
+    width: 400px;
+    margin: 30px auto;
+}
+.login-form form {
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 2px 2px 2px var(--light-green);
+    padding: 30px;
+}
+.login-form h2 {
+    margin: 0 0 15px;
+}
+.form-control, .btn {
+    min-height: 28px;
+    border-radius: 2px var(--lightest-green);
+}
+.btn {        
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 8px 18px;
+}
+.register-form{
+    width: 400px;
+    margin: 30px auto;
+}
+.register-form form {
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 2px 2px 2px var(--lightest-green);
+    padding: 30px;
+}
+.form-group{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5vh 0px;
+    align-items: center;
+}
+.register-form h2 {
+    margin: 0 0 15px;
+}
+.register-form .btn {
+    font-size: 16px;
+    font-weight: bold;
+}
+.alert.alert-info{
+    text-align: center;
+    font-size: x-large;
+}
